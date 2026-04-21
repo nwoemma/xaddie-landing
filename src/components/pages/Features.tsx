@@ -41,7 +41,7 @@ export default function Features() {
         <div ref={headerRef} className="text-center mb-20 opacity-0">
           <span className="text-[#E8441A] text-xs font-bold tracking-[3px] uppercase mb-4 block">Everything you need</span>
           <h2 className="font-[Syne] text-4xl md:text-5xl font-extrabold tracking-[-1.5px] mb-5 leading-[1.1]">
-            One app. Infinite <span className="text-[#E8441A]">possibilities.</span>
+            One app. <span className="text-[#E8441A]">Built different.</span>
           </h2>
           <p className="text-white/55 text-lg max-w-md mx-auto leading-relaxed font-light">
             Xaddie brings every financial tool you need into a single, elegant platform.
