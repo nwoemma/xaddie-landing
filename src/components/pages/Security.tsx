@@ -36,9 +36,9 @@ export default function Security() {
   const trustCards = [
     { title: 'We are just getting started', desc: 'Xaddie is a new product built by a passionate team that believes buying gift cards should be fast, simple, and safe. We are actively building, improving, and listening to every piece of feedback we receive.' },
     { title: 'Security is being taken seriously', desc: 'From day one, we have implemented industry-standard security practices. We use encryption, device verification, and identity checks not because we have to — but because your trust means everything to us.' },
-    { title: 'Built for Nigeria and beyond', desc: 'Xaddie was born out of a real need — accessing global gift cards locally is harder than it should be. We are solving that problem for everyday Nigerians and expanding across Africa, one gift card at a time.' },
+    { title: 'Built for Nigeria and beyond', desc: 'Xaddie was built to bridge the gap between Nigeria, Africa and global financial services. We are solving real money problems for everyday people, starting from Nigeria and expanding across the continent.' },
     { title: 'No hidden charges', desc: 'What you see is what you pay. We believe in full transparency with our pricing. No surprise deductions, no hidden fees added at checkout. Just a straightforward way to buy the gift cards you need.' },
-    { title: 'Fast delivery, every time', desc: 'Gift cards are delivered to your account in under a minute after payment is confirmed. No waiting, no back and forth with customer service — just instant access to your purchase.' },
+    { title: 'Fast and reliable', desc: 'Transactions are processed quickly after payment is confirmed. No waiting, no back and forth — just instant access to your money and purchases.' },
     { title: 'We listen to our users', desc: 'Every feature on Xaddie exists because someone asked for it. We actively collect feedback and use it to shape our roadmap. If something is not working for you, we want to know about it.' },
   ];
 

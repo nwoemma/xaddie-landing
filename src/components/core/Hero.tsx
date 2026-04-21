@@ -21,6 +21,7 @@ export default function Hero() {
 
         {/* Left content */}
         <div className="animate-[fadeUp_0.8s_ease_both]">
+          <span className="text-[#E8441A] text-xs font-bold tracking-[3px] uppercase mb-6 block">Designed for the modern economy</span>
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-[Syne] font-extrabold leading-[1.05] tracking-[-2px] mb-6">
             Your Money,<br />
             <span className="text-[#E8441A]">Anywhere.</span><br />
@@ -28,9 +29,8 @@ export default function Hero() {
           </h1>
 
           <p className="text-white/55 text-lg leading-relaxed max-w-md mb-10 font-light">
-            Buy gift cards from top global brands, send money, and manage your finances — all from one app.
+            Xaddie is a fintech platform that integrates traditional financial infrastructure with blockchain technology. Store, spend, convert and manage your money across borders — transactions, virtual cards, bill payments, gift cards and more, all in one app.
           </p>
-
         </div>
 
         {/* Right — image */}
@@ -39,8 +39,7 @@ export default function Hero() {
           <img
             src={heroImg}
             alt="Xaddie App"
-            className="w-[400px] object-contain relative z-10 animate-[floatA_4s_ease-in-out_infinite] mix-blend-screen"
-              style={{ mixBlendMode: 'multiply', filter: 'contrast(1.1)' }}
+            className="w-[400px] object-contain relative z-10 animate-[floatA_4s_ease-in-out_infinite]"
           />
         </div>
 

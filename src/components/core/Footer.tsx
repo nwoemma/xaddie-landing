@@ -44,7 +44,7 @@ export default function Footer() {
               </div>
             </Link>
             <p className="text-white/35 text-sm leading-relaxed font-light">
-              Buy gift cards from our brand.<br />Fast, secure, and instant delivery.
+              A fintech platform integrating traditional finance with blockchain technology. Manage your money across borders — all in one app.
             </p>
           </div>
 
@@ -70,7 +70,7 @@ export default function Footer() {
         <div className="border-t border-white/5 pt-6 flex flex-col sm:flex-row justify-between gap-3 text-xs text-white/30">
           <span>© 2026 Xaddie. All rights reserved.</span>
           <span className="flex items-center gap-2">
-            <MdGridView className="text-[#E8441A]" /> Xaddie — where gift cards meet simplicity
+            <MdGridView className="text-[#E8441A]" /> Xaddie — where finance meets simplicity
           </span>
 
         </div>

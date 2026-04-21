@@ -2,8 +2,8 @@ import { useEffect, useRef } from 'react';
 import { MdCreditCard, MdCardGiftcard, MdFlashOn, MdCurrencyExchange, MdLock, MdReceiptLong } from 'react-icons/md';
 
 const features = [
-  { icon: <MdCreditCard className="text-2xl text-[#E8441A]" />, title: 'Virtual USD Card', desc: 'Create a Mastercard virtual card instantly. Shop globally, pay subscriptions, zero stress.', tag: '$2 creation fee' },
-  { icon: <MdCardGiftcard className="text-2xl text-[#E8441A]" />, title: 'Gift Card Trading', desc: 'Buy and sell gift cards from top brands at the best rates — instantly credited to your wallet.', tag: 'Best rates' },
+  { icon: <MdCardGiftcard className="text-2xl text-[#E8441A]" />, title: 'Gift Cards', desc: 'Buy gift cards from top global brands instantly. Gaming, streaming, shopping — delivered straight to your wallet.', tag: 'Main feature' },
+  { icon: <MdCreditCard className="text-2xl text-[#E8441A]" />, title: 'Virtual USD Card', desc: 'Create a Mastercard virtual card instantly. Shop globally and pay subscriptions with ease.', tag: '$2 creation fee' },
   { icon: <MdFlashOn className="text-2xl text-[#E8441A]" />, title: 'Instant Transfers', desc: 'Send NGN to any bank or wallet in seconds. Zero fees on Xaddie-to-Xaddie transfers.', tag: 'Zero fees' },
   { icon: <MdCurrencyExchange className="text-2xl text-[#E8441A]" />, title: 'Stablecoins', desc: 'Trade and hold USDT, USDC and other stablecoins to protect your wealth from inflation.', tag: 'New' },
   { icon: <MdLock className="text-2xl text-[#E8441A]" />, title: 'Secure PIN Access', desc: 'Every transaction is guarded by your 4-digit PIN, biometrics, and end-to-end encryption.', tag: 'Bank-grade' },
@@ -44,7 +44,7 @@ export default function Features() {
             One app. <span className="text-[#E8441A]">Built different.</span>
           </h2>
           <p className="text-white/55 text-lg max-w-md mx-auto leading-relaxed font-light">
-            Xaddie brings every financial tool you need into a single, elegant platform.
+            Xaddie is a global, next-generation fintech platform engineered to deliver seamless access to digital financial services across borders. The platform integrates traditional financial infrastructure with blockchain-based value systems, enabling users to store, spend, convert, and manage money in a single, unified ecosystem.
           </p>
         </div>
 
