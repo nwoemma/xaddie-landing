@@ -64,7 +64,7 @@ export default function DownloadApp() {
           {[
             { value: 'Free', label: 'To Download' },
             { value: '1min', label: 'Setup Time' },
-            { value: '10+', label: 'Brands' },
+            { value: '1', label: 'Brands' },
           ].map(s => (
             <div key={s.label} className="bg-white/[0.03] border border-white/[0.06] rounded-2xl p-4">
               <div className="font-[Syne] font-black text-2xl text-[#E8441A]">{s.value}</div>
