@@ -39,7 +39,7 @@ export default function DownloadApp() {
           ref={descRef}
           className="opacity-0 text-white/50 text-lg mb-10"
         >
-          Buy gift cards, send to anyone, anywhere. Download the app to get started.
+          Buy gift cards, Do your transaction and protect your money with our tools . Download the app to get started.
         </p>
 
         <div
