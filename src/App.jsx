@@ -10,6 +10,8 @@ import Footer from './components/core/Footer'
 import CTA from './components/pages/CTA';
 import DownloadApp from './components/pages/Download';
 import Contact from './components/pages/Contact';
+import PrivacyPolicy from './components/pages/Privacy';
+import Terms from './components/pages/Terms';
 import './App.css'
 import './index.css'
 
@@ -42,6 +44,8 @@ function App() {
             <Route path='/products' element= {<Product/>}/>
             <Route path='/download' element= {<DownloadApp/>}/>
             <Route path='/cta' element= {<CTA/>}/>
+            <Route path='/privacy' element={<PrivacyPolicy />} />
+            <Route path='/terms' element={<Terms />} />
             <Route path='/contact' element={<Contact />} />
           </Routes>
         <Footer />

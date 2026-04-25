@@ -3,7 +3,7 @@ import { MdCreditCard, MdCardGiftcard, MdFlashOn, MdCurrencyExchange, MdLock, Md
 
 const features = [
   { icon: <MdCardGiftcard className="text-2xl text-[#E8441A]" />, title: 'Gift Cards', desc: 'Buy gift cards from top global brands instantly. Gaming, streaming, shopping — delivered straight to your wallet.', tag: 'Main feature' },
-  { icon: <MdCreditCard className="text-2xl text-[#E8441A]" />, title: 'Virtual USD Card', desc: 'Create a Mastercard virtual card instantly. Shop globally and pay subscriptions with ease.', tag: '$2 creation fee' },
+  { icon: <MdCreditCard className="text-2xl text-[#E8441A]" />, title: 'Virtual USD Card', desc: 'Create a Mastercard virtual card instantly. Shop globally and pay subscriptions with ease.', tag: 'New' },
   { icon: <MdFlashOn className="text-2xl text-[#E8441A]" />, title: 'Instant Transfers', desc: 'Send NGN to any bank or wallet in seconds. Zero fees on Xaddie-to-Xaddie transfers.', tag: 'Zero fees' },
   { icon: <MdCurrencyExchange className="text-2xl text-[#E8441A]" />, title: 'Stablecoins', desc: 'Trade and hold USDT, USDC and other stablecoins to protect your wealth from inflation.', tag: 'New' },
   { icon: <MdLock className="text-2xl text-[#E8441A]" />, title: 'Secure PIN Access', desc: 'Every transaction is guarded by your 4-digit PIN, biometrics, and end-to-end encryption.', tag: 'Bank-grade' },

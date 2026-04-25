@@ -17,6 +17,7 @@ const cols = [
     title: 'Company',
     links: [
       { label: 'CTA', to: '/cta' },
+      { label : "Download App", to: '/download'},
       { label: 'Security', to: '/security' },
       
     ],
@@ -24,8 +25,10 @@ const cols = [
   {
     title: 'Support',
     links: [
+      {label : "Privacy Policy", to: '/privacy'},
+      { label: 'Terms of Service', to: '/terms' },
       { label: 'Contact Us', to: '/contact' },
-      { label: 'Download App', to: '/download' },
+      // { label: 'Download App', to: '/download' },
     ],
   },
 ];
