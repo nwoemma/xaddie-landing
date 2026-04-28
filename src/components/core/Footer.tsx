@@ -11,6 +11,7 @@ const cols = [
       { label: 'Features', to: '/features' },
       { label: 'Products', to: '/products' },
       { label: 'How It Works', to: '/howitworks' },
+      { label: "FAQ", to: '/faq'},
     ],
   },
   {

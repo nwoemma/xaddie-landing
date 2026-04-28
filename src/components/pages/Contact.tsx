@@ -1,23 +1,44 @@
 import { useState, useEffect, useRef } from 'react';
-import { MdEmail, MdPerson, MdMessage } from 'react-icons/md';
+import { MdEmail, MdPerson, MdMessage, MdPhone, MdLocationOn } from 'react-icons/md';
+
+const contactInfo = [
+  {
+    icon: <MdEmail className="text-[#E8441A] text-2xl" />,
+    label: 'Email',
+    value: 'Xaddieglobalservicesltd@gmail.com',
+    href: 'mailto:Xaddieglobalservicesltd@gmail.com',
+  },
+  {
+    icon: <MdPhone className="text-[#E8441A] text-2xl" />,
+    label: 'Phone',
+    value: '08164253497',
+    href: 'tel:08164253497',
+  },
+  {
+    icon: <MdLocationOn className="text-[#E8441A] text-2xl" />,
+    label: 'Address',
+    value: '69 Unical Hotel Road, Malabar, Cross River State.',
+    href: null,
+  },
+];
 
 export default function Contact() {
   const [form, setForm] = useState({ name: '', email: '', message: '' });
   const [sent, setSent] = useState(false);
 
   const headerRef = useRef<HTMLDivElement>(null);
+  const infoRef = useRef<HTMLDivElement>(null);
   const formRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('animate-fade-up');
-        }
+        if (entry.isIntersecting) entry.target.classList.add('animate-fade-up');
       });
     }, { threshold: 0.1 });
 
     if (headerRef.current) observer.observe(headerRef.current);
+    if (infoRef.current) observer.observe(infoRef.current);
     if (formRef.current) observer.observe(formRef.current);
 
     return () => observer.disconnect();
@@ -30,7 +51,11 @@ export default function Contact() {
 
   return (
     <div className="min-h-screen bg-[#080D1A] pt-28 pb-24 px-6">
-      <div className="max-w-xl mx-auto">
+
+      {/* Top border line */}
+      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#E8441A]/30 to-transparent" />
+
+      <div className="max-w-2xl mx-auto">
 
         {/* Header */}
         <div ref={headerRef} className="text-center mb-12 opacity-0">
@@ -43,6 +68,34 @@ export default function Contact() {
           </p>
         </div>
 
+        {/* Contact Info Cards */}
+        <div ref={infoRef} className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8 opacity-0">
+          {contactInfo.map((item, i) => (
+            <div
+              key={i}
+              style={{ animationDelay: `${i * 0.08}s` }}
+              className="bg-[#0F1A2E] border border-white/[0.06] rounded-3xl p-5 flex flex-col items-center text-center gap-2 hover:border-[#E8441A]/30 transition-all group relative overflow-hidden"
+            >
+              <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(232,68,26,0.06),transparent_60%)] opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
+              <div className="w-11 h-11 bg-[#E8441A]/10 rounded-2xl flex items-center justify-center mb-1">
+                {item.icon}
+              </div>
+              <p className="text-white/40 text-xs font-bold uppercase tracking-widest">{item.label}</p>
+              {item.href ? (
+                <a
+                  href={item.href}
+                  className="text-white/80 text-sm font-medium hover:text-[#E8441A] transition-colors leading-snug break-all"
+                >
+                  {item.value}
+                </a>
+              ) : (
+                <p className="text-white/80 text-sm font-medium leading-snug">{item.value}</p>
+              )}
+            </div>
+          ))}
+        </div>
+
+        {/* Form */}
         {sent ? (
           <div className="bg-[#0F1A2E] border border-[#E8441A]/30 rounded-3xl p-10 text-center animate-fade-up">
             <div className="text-5xl mb-4">✅</div>
@@ -109,6 +162,7 @@ export default function Contact() {
 
           </div>
         )}
+
       </div>
     </div>
   );
